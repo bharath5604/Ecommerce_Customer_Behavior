@@ -14,7 +14,7 @@ st.title("📊 E-Commerce Customer Behavior Dashboard")
 # Load RFM summary data
 # -----------------------------
 try:
-    df = pd.read_csv('../reports/rfm_summary.csv')
+    df = pd.read_csv('reports/rfm_summary.csv')
     st.success("✅ RFM data loaded successfully!")
 except FileNotFoundError:
     st.error("⚠️ RFM summary file not found! Please run the analysis notebooks first.")
